@@ -21,12 +21,13 @@ scalacOptions in Test ++= Seq("-Yrangepos")
 
 
 lazy val commonSettings = Seq(
-  organization := "io.doriordan",
+  organization := "com.adendamedia",
   scalaVersion := "2.11.8",
   licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html")),
   publishMavenStyle := false,
-  bintrayRepository := "skuber",
-  version := "0.7-SNAPSHOT"
+  version := "0.7",
+  bintrayOrganization := Some("adenda"),
+  bintrayRepository := "skuber"
 )
 
 lazy val skuberSettings = Seq(
